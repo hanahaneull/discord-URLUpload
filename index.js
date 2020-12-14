@@ -76,7 +76,7 @@ client.on('message', async (msg) => {
 						},
 					});
 				} catch (error) {
-					console.log(error.body);
+					console.log(error.code);
 				}
 			})();
 			break;
