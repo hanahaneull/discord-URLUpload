@@ -11,8 +11,10 @@ Rename `config.json.example` to `config.json` and edit with your setting
 
 # Usage
 
-`<prefix>send URL`
+`<prefix>send [URL]`
 
 Example:
 
 `up!send https://x0.at/TAu.jpg`
+
+![Example](https://lewd.pics/p/X0AH.gif)
