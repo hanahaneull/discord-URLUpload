@@ -1,4 +1,5 @@
 const config = require('./config.json');
+const mime = require('./mime.json');
 const got = require('got');
 const Discord = require('discord.js');
 const client = new Discord.Client({
@@ -65,8 +66,13 @@ client.on('message', async (msg) => {
 				try {
 					const response = await got(args[0], { responseType: 'buffer' });
 					const buffer = response.body;
+					const type = mime[`${response.headers['content-type']}`];
+
 					msg.channel.send('', {
-						file: buffer,
+						file: {
+							attachment: buffer,
+							name: `${Date.now()}.${type}`,
+						},
 					});
 				} catch (error) {
 					console.log(error.body);
