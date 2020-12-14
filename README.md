@@ -2,7 +2,13 @@
 
 Upload Discord attachment straight from your discord account.
 
-# Setting
+# Installation
+
+1. Open console in folder
+2. type `npm i`
+3. and type `node index.js` (Make sure you already edit the settings)
+
+# Settings
 
 Rename `config.json.example` to `config.json` and edit with your setting
 
