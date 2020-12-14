@@ -1,0 +1,16 @@
+{
+	"name": "discord-urlupload",
+	"version": "1.0.0",
+	"description": "Send discord attachment from URL",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "Haneul Seong <hana@disroot.org>",
+	"license": "WTFPL",
+	"dependencies": {
+		"discord.js": "^11.6.4",
+		"got": "^11.8.1"
+	}
+}
