@@ -66,7 +66,8 @@ client.on('message', async (msg) => {
 				try {
 					const response = await got(args[0], { responseType: 'buffer' });
 					const buffer = response.body;
-					const type = mime[`${response.headers['content-type']}`];
+					const type =
+						mime[`${response.headers['content-type']}`.split(';')[0]];
 
 					msg.channel.send('', {
 						file: {
