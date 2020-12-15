@@ -69,14 +69,18 @@ client.on('message', async (msg) => {
 					const type =
 						mime[`${response.headers['content-type']}`.split(';')[0]];
 
-					msg.channel.send('', {
-						file: {
-							attachment: buffer,
-							name: `${Date.now()}.${type}`,
-						},
-					});
+					msg.channel
+						.send('', {
+							file: {
+								attachment: buffer,
+								name: `${Date.now()}.${type}`,
+							},
+						})
+						.catch((e) => {
+							console.log(`[DISCORD] ERROR: ${e.message}`);
+						});
 				} catch (error) {
-					console.log(error.code);
+					console.log(`[URL] ERROR: ${error.code}`);
 				}
 			})();
 			break;
