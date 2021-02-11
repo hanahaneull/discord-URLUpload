@@ -1,6 +1,6 @@
 {
 	"name": "discord-urlupload",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Send discord attachment from URL",
 	"main": "index.js",
 	"scripts": {
@@ -11,6 +11,7 @@
 	"license": "WTFPL",
 	"dependencies": {
 		"discord.js": "^11.6.4",
-		"got": "^11.8.1"
+		"got": "^11.8.1",
+		"yargs-parser": "^20.2.4"
 	}
 }

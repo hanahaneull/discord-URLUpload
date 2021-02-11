@@ -19,15 +19,27 @@ Rename `config.json.example` to `config.json` and edit with your setting
 `token`: Your discord token.  
 `prefix`: Your prefix for sending attachment
 
+# Flags
+
+`--message`: Set message content.  
+`--type`: Force set file extension.  
+`--name`: Force set file name.
+
 # Usage
 
-`<prefix>send [URL]`
+`<prefix>send (URL) [FLAGS]`
 
-Example:
+Example simple:
 
-`up!send https://x0.at/TAu.jpg`
+`up!send https://x0.at/dx3.png`
 
-![Example](https://lewd.pics/p/X0AH.gif)
+![Example](https://lewd.pics/p/nx9U.gif)
+
+Example advance:
+
+`up!send https://x0.at/dx3.png --message='Yuno is cute' --type=jpg --name=UWU`
+
+![Example advance](https://lewd.pics/p/DZw0.gif)
 
 # License
 
